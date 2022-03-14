@@ -125,5 +125,5 @@ venv.bak/
 dmypy.json
 
 # output
-data/
+data/*.csv
 data/row
