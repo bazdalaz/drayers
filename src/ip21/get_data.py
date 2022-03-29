@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from aspen_pyconnect import IP21Connector
 
-from list_H160 import TAGS, unit_name
+from list_Maor import TAGS, unit_name
 
 TIME_DELTA = 7
 QUERY_PERIOD = '00:1:00'
