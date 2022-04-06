@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from aspen_pyconnect import IP21Connector
 
-from list_Maor import TAGS, unit_name
+from list_H160 import TAGS, unit_name
 
 TIME_DELTA = 7
 QUERY_PERIOD = '00:1:00'
@@ -18,12 +18,12 @@ try:
 except ValueError:
     if sys.argv[1] == "-h" or sys.argv[1] == "--help":
         print(
-            "Pass number of days for report as parameter like 'python main.py 30'\nCalling without agruments will "
+            "Pass number of days for report as parameter like 'python main.py 30'\nCalling without arguments will "
             "generate report for one week by default "
         )
         quit()
 
-    print(f"time delta param should be int, processin with default time delta={TIME_DELTA}")
+    print(f"time delta param should be int, processing with default time delta={TIME_DELTA}")
     time_delta = TIME_DELTA
 
 aspen = IP21Connector(
