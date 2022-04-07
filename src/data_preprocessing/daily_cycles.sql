@@ -1,8 +1,8 @@
 WITH distinct_orders AS (
-    SELECT DISTINCT phase,
+    SELECT DISTINCT batch,
     DATE (date) AS DATE
 FROM df
-WHERE phase='PREPARE'
+WHERE phase='DRYING'
     )
 
 SELECT
