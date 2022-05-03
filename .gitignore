@@ -127,3 +127,5 @@ dmypy.json
 # output
 data/*.csv
 data/row
+data/test
+data/train
